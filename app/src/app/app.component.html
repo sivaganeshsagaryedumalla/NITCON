@@ -1,6 +1,6 @@
 <header>
-    <div class="flex justify-between bg-yellow-500">
-        <div class="flex">
+    <div class="justify-between bg-yellow-500 hidden md:flex">
+        <div class="">
             <span class="m-1 text-white text-sm cursor-pointer">+91 9898989898</span>
             <span class="m-1 text-white text-sm  cursor-pointer">nitcon&#64;gmail.com</span>
             <span class="m-1  text-white text-sm  cursor-pointer">Mon - Fri (8 A.M to 8 P.M)</span>
@@ -16,13 +16,23 @@
             Checking...
         </div>
         <nav>
-            <ul class="flex">
+            <ul class="hidden md:flex">
                 <li class="m-1 text-white   cursor-pointer">Home</li>
                 <li class="m-1 text-white   cursor-pointer">About US</li>
                 <li class="m-1 text-white   cursor-pointer">Services</li>
                 <li class="m-1 text-white   cursor-pointer">Portfolio</li>
                 <li class="m-1 text-white   cursor-pointer">Contact Us</li>
             </ul>
+            <button (click)="onClickButton()" class="block md:hidden">
+                <i class="pi pi-align-justify"></i>
+                <ul *ngIf="openMenu" class="hidden md:flex absolute">
+                    <li class="m-1 text-white   cursor-pointer">Home</li>
+                    <li class="m-1 text-white   cursor-pointer">About US</li>
+                    <li class="m-1 text-white   cursor-pointer">Services</li>
+                    <li class="m-1 text-white   cursor-pointer">Portfolio</li>
+                    <li class="m-1 text-white   cursor-pointer">Contact Us</li>
+                </ul>
+            </button>
 
         </nav>
 
