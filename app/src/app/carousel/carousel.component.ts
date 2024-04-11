@@ -22,9 +22,9 @@ export class CarouselComponent {
   imageIndex:number=0;
   isCircular:boolean=true;
   images: any[] = [
-    { path: '../../assets/images/bg1.jpg',title:'17 Years of excellence in',subTitle:'Construction Industry',show:'hide' },
-    { path: '../../assets/images/bg3.jpg',title:'When Service Matters',subTitle:'World Class Service',show:'hide' }, 
-    { path: '../../assets/images/bg2.jpg',title:'We believe sustainability',subTitle:'Meet Our Engineers',show:'hide'} ]
+    { path: 'assets/images/bg1.jpg',title:'17 Years of excellence in',subTitle:'Construction Industry',show:'hide' },
+    { path: 'assets/images/bg3.jpg',title:'When Service Matters',subTitle:'World Class Service',show:'hide' }, 
+    { path: 'assets/images/bg2.jpg',title:'We believe sustainability',subTitle:'Meet Our Engineers',show:'hide'} ]
   ngOnInit(): void {
 
   }
