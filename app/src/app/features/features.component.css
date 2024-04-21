@@ -1,17 +1,74 @@
 .scroll-transition {
-      opacity: 0;
-      transform: translateX(-100%);
-      transition: opacity 0.5s ease, transform 0.5s ease;
-    }
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
-    .scrolled {
-      opacity: 1;
-      transform: translateX(0);
-    }
+.scrolled {
+  opacity: 1;
+  transform: translateX(0);
+}
 
-    .content {
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+.content {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dynamic {
+  background-repeat: no-repeat;
+  /* width: 100%; */
+  /* Set the width of the container */
+  /* height: 100%; */
+  /* Set the height of the container */
+  background-size: cover;
+  /* Scale the background image while preserving its aspect ratio */
+  background-position: bottom;
+  /* Center the background image */
+  background-size: cover;
+  transition: all 2s linear;
+  transition: all 2s linear;
+  animation: slideIn 2s forwards;
+
+}
+
+.dynamic.cls1.active {
+  background-image: url(../../../../app/src/assets/images/Home.jpg) !important;
+  backdrop-filter: blur(16px);
+}
+
+.dynamic.cls2.active {
+  background-image: url(../../../../app/src/assets/images/remodel.jpg);
+
+}
+
+.dynamic.cls3.active {
+  background-image: url(../../../../app/src/assets/images/interior.jpg);
+
+}
+
+.dynamic.cls4.active {
+  background-image: url(../../../../app/src/assets/images/ext.jpg);
+
+}
+
+.dynamic.cls5.active {
+  background-image: url(../../../../app/src/assets/images/renovation.jpg);
+
+}
+
+.dynamic.cls6.active {
+  background-image: url(../../../../app/src/assets/images/safety.jpg);
+
+}
+
+@keyframes slideIn {
+  from {
+    background-position: -100% 0;
+  }
+
+  to {
+    background-position: 0 0;
+  }
+}
